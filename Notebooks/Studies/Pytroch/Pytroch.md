@@ -1,0 +1,3 @@
+# Estudo de DeepLearning utilizando a biblioteca Pytroch
+
+Esse notebook contem conceitos de Sintaxe do Pytroch,Perceptron,Redes neurais,Camadas Lineares,Classificações Lineares,Modelos Lineares,Funções de Ativação,Arquitetura de Modelos com Pytorch,Funções de Perda,Otimização e a aplicação desses conceitos em modelos de Classificação e Regressão. Dessa forma esse notebok consiste em documentar os meus estudos e aprendizados relacionados ao Pytroch e a Conceitos de DeppLearning ao qual foram aplicados nos projetos desse repositorio.
