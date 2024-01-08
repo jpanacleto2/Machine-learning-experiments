@@ -1,3 +1,0 @@
-# Análise de Sentimentos em Reviews de Filmes do IMDB
-
-Neste notebook, explorei a análise de sentimentos em reviews de filmes da base de dados do IMDB. Utilizei várias bibliotecas em Python para realizar tarefas como pré-processamento de texto, extração de características, treinamento de modelo e visualização de dados,utilizando bibliotecas como Pandas,ScikitLearn,Wordcloud,Matplotlib,Nltk dentre outras. Com esse estudo pude compreender conceitos de NLP (Natural Language Process) ou Processamento de Linguagem natural e como utilizar em bases de dados reais.
