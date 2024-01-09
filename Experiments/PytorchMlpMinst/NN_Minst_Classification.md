@@ -1,13 +1,13 @@
-# Classificação de Imagens usando PyTorch
+# Image Classification using PyTorch
 
-Este projeto em Python utiliza a biblioteca PyTorch para treinar um modelo de classificação de imagens usando a arquitetura de uma rede neural simples. O objetivo é classificar dígitos escritos à mão da base de dados MNIST.
+This Python project utilizes the PyTorch library to train an image classification model using a simple neural network architecture. The goal is to classify hand-written digits from the MNIST dataset.
 
-## Funcionamento
+## Operation
 
-- Carregamento dos Dados: Utiliza o dataset MNIST para treinamento do modelo.
-- Definição do Modelo: Define uma arquitetura de rede neural simples para classificação de imagens.
-- Treinamento: Utiliza o otimizador Adam e a função de perda CrossEntropy para treinar o modelo.
-- Salvando/Carregando o Modelo: Salva o estado treinado do modelo em um arquivo e carrega-o novamente.
-- Inferência em uma Nova Imagem: Carrega uma nova imagem, a converte em tensor e realiza inferência com o modelo treinado.
+- Data Loading: Utilizes the MNIST dataset for model training.
+- Model Definition: Defines a simple neural network architecture for image classification.
+- Training: Uses the Adam optimizer and CrossEntropy loss function to train the model.
+- Saving/Loading the Model: Saves the trained model's state to a file and reloads it when needed.
+- Inference on a New Image: Loads a new image, converts it into a tensor, and performs inference with the trained model.
 
-Esse projeto é um exemplo básico de classificação de imagens usando PyTorch e pode ser expandido para problemas mais complexos.
+This project serves as a basic example of image classification using Multi Layer Perceptron with PyTorch and can be extended to tackle more complex problems.
