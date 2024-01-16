@@ -33,11 +33,11 @@ def Demos():
 
 def ToxicityModel():
     # Load data and model
-    df = pd.read_csv(os.path.join('../Demos/data/CommentToxicity', 'train.csv', 'train.csv'))
+    df = pd.read_csv(os.path.join('/Machine-learning-experiments/Demos/data/CommentToxicity', 'train.csv', 'train.csv'))
     MAX_FEATURES = 200000
     vectorizer = TextVectorization(max_tokens=MAX_FEATURES, output_sequence_length=1800, output_mode='int')
     vectorizer.adapt(df['comment_text'].values)
-    model = tf.keras.models.load_model('../Demos/models/toxicity.h5')
+    model = tf.keras.models.load_model('/Machine-learning-experiments/Demos/models/toxicity.h5')
     
     # load the trained model and perform classification
     def score_comment(comment):
@@ -122,7 +122,7 @@ def LeafDiseaseModel():
 
     # Load PyTorch model
     model = SimpleCNN()
-    model.load_state_dict(torch.load('../Demos/models/model.pth'))
+    model.load_state_dict(torch.load('/Machine-learning-experiments/Demos/models/model.pth'))
     model.eval()
 
     st.title("Plant Leaf Disease Classification Model")
@@ -137,9 +137,9 @@ def LeafDiseaseModel():
     st.write("Here are some example images that you can use to test the model:")
 
     example_images = [
-        "../Demos/assets/8bc2979962db6549.jpg",
-        "../Demos/assets/8a2d598f2ec436e6.jpg",
-        "../Demos/assets/8a954b82bf81f2bc.jpg",
+        "/Machine-learning-experiments/Demos/assets/8bc2979962db6549.jpg",
+        "/Machine-learning-experiments/Demos/assets/8a2d598f2ec436e6.jpg",
+        "/Machine-learning-experiments/Demos/assets/8a954b82bf81f2bc.jpg",
     ]
 
     for example_image_url in example_images:
