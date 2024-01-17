@@ -33,11 +33,11 @@ def Demos():
 
 def ToxicityModel():
     # Load data and model
-    df = pd.read_csv(os.path.join('/Machine-learning-experiments/Demos/data/CommentToxicity', 'train.csv', 'train.csv'))
+    df = pd.read_csv(os.path.join('/mount/src/machine-learning-experiments/Demos/data/CommentToxicity', 'train.csv', 'train.csv'))
     MAX_FEATURES = 200000
     vectorizer = TextVectorization(max_tokens=MAX_FEATURES, output_sequence_length=1800, output_mode='int')
     vectorizer.adapt(df['comment_text'].values)
-    model = tf.keras.models.load_model('/Machine-learning-experiments/Demos/models/toxicity.h5')
+    model = tf.keras.models.load_model('/mount/src/machine-learning-experiments/Demos/models/toxicity.h5')
     
     # load the trained model and perform classification
     def score_comment(comment):
@@ -138,7 +138,7 @@ def LeafDiseaseModel():
 
     example_images = [
         "/mount/src/machine-learning-experiments/Demos/assets/8bc2979962db6549.jpg",
-        "/mount/src/machine-learning-experiments/Demos/assets/assets/8a2d598f2ec436e6.jpg",
+        "/mount/src/machine-learning-experiments/Demos/assets/8a2d598f2ec436e6.jpg",
         "/mount/src/machine-learning-experiments/Demos/assets/8a954b82bf81f2bc.jpg",
     ]
 
