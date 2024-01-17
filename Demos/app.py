@@ -122,7 +122,7 @@ def LeafDiseaseModel():
 
     # Load PyTorch model
     model = SimpleCNN()
-    model_path = '/Machine-learning-experiments/Demos/models/model.pth'
+    model_path = '/mount/src/machine-learning-experiments/Demos/models/model.pth'
     model.load_state_dict(torch.load(model_path))
     
     st.title("Plant Leaf Disease Classification Model")
