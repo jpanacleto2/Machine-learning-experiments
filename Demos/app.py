@@ -137,9 +137,9 @@ def LeafDiseaseModel():
     st.write("Here are some example images that you can use to test the model:")
 
     example_images = [
-        "/Machine-learning-experiments/Demos/assets/8bc2979962db6549.jpg",
-        "/Machine-learning-experiments/Demos/assets/8a2d598f2ec436e6.jpg",
-        "/Machine-learning-experiments/Demos/assets/8a954b82bf81f2bc.jpg",
+        "/mount/src/machine-learning-experiments/Demos/assets/8bc2979962db6549.jpg",
+        "/mount/src/machine-learning-experiments/Demos/assets/assets/8a2d598f2ec436e6.jpg",
+        "/mount/src/machine-learning-experiments/Demos/assets/8a954b82bf81f2bc.jpg",
     ]
 
     for example_image_url in example_images:
